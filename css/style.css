@@ -6,6 +6,13 @@ body
     padding: 10px;
 }
 
+#pomodoro-logo
+{
+    height: 50px;
+    width: 50px;
+}
+
+
 h3 header
 {
    
@@ -20,25 +27,16 @@ h3 header
     padding: 30px 10px 20px 10px;
 }
 
-#page, #footer
+#page
 {
     margin: 0 auto 0 auto;
     position: relative;
     text-align: center;
 }
  
-
-
-#pomodoro-logo
-{
-    height: 50px;
-    width: 50px;
-}
-
 #page p
 {
-    background-color: #fff;
-    color: #666; 
+    color: black; 
     padding: 10px;
     display: inline-block;
     margin: 20px auto 20px auto;
@@ -47,17 +45,44 @@ h3 header
     text-align: center;
 }
 
-#links 
+.button-start
 {
-    background-color: #fff;
-    color: #666; 
+    background-color: green;
+}
+
+#main-timer 
+{
+    background-color: lightcoral;
+    color: black; 
     padding: 10px;
     display: inline-block;
     margin: 20px auto 20px auto;
-    width: 40%;
+    width: 80%;
     border-radius: 5px;
     text-align: center;
 }
+
+#break-timer 
+{
+    background-color: lightgreen;
+    color: black; 
+    padding: 10px;
+    display: inline-block;
+    margin: 10px auto 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#quotes p
+{
+    size
+}
+
+
+
+
+
 
 /* Small screen:mobile */
 @media only screen and (max-width: 500px) 
@@ -66,14 +91,14 @@ h3 header
     {
         background-color: lightgrey;
     }
-    #page, #links
+    #page
     {
       max-width: 480px;
     }
   }
   @media only screen and (min-width: 501px) and (max-width: 767px) 
   {
-    #page, #links
+    #page
     {
       max-width: 480px;
       margin: 20px auto 20px auto;
@@ -82,7 +107,7 @@ h3 header
 
   @media only screen and (min-width: 768px) and (max-width: 959px) 
   {
-    #page, #links
+    #page
     {
       max-width: 480px;
       margin: 20px auto 20px auto;
@@ -92,7 +117,7 @@ h3 header
   /* Larger screens act like a demo for the app */
   @media only screen and (min-width: 960px) 
   {
-    #page, #links
+    #page, #footer-links
     {
       max-width: 480px;
       margin: 20px auto 20px auto;
