@@ -74,10 +74,6 @@ h3 header
     text-align: center;
 }
 
-#quotes p
-{
-    size
-}
 
 
 
@@ -95,31 +91,32 @@ h3 header
     {
       max-width: 480px;
     }
-  }
-  @media only screen and (min-width: 501px) and (max-width: 767px) 
-  {
-    #page
-    {
-      max-width: 480px;
-      margin: 20px auto 20px auto;
-    }
-  }
+}
 
-  @media only screen and (min-width: 768px) and (max-width: 959px) 
+@media only screen and (min-width: 501px) and (max-width: 767px) 
+{
+  #page
   {
-    #page
-    {
-      max-width: 480px;
-      margin: 20px auto 20px auto;
-    }
+    max-width: 480px;
+    margin: 20px auto 20px auto;
   }
+}
 
-  /* Larger screens act like a demo for the app */
-  @media only screen and (min-width: 960px) 
+@media only screen and (min-width: 768px) and (max-width: 959px) 
+{
+  #page
   {
-    #page, #footer-links
-    {
-      max-width: 480px;
-      margin: 20px auto 20px auto;
-    }
+    max-width: 480px;
+    margin: 20px auto 20px auto;
   }
+}
+
+ /* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) 
+{
+  #page, #footer-links
+  {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
