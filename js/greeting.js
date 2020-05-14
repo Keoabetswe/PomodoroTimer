@@ -1,9 +1,9 @@
+var today = newDate();
+var hourNow = today.getHours();
+var greetingMessage;
+
 function greetUser()
 {
-    var today = newDate();
-    var hourNow = today.getHours();
-    var greetingMessage;
-
     if(hourNow > 18)
     {
         greetingMessage = 'Good Evening';
@@ -16,8 +16,8 @@ function greetUser()
     {
         greetingMessage = 'Good Morning!';
     }
-
-    var el = document.getElementById('greeting');
+    
+    var el = document.getElementById('greet');
     el.textContent = greetingMessage;
 }
 
