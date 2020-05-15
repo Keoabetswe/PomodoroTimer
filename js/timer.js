@@ -12,15 +12,28 @@ function startTimer(duration, display)
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
+        if (--timer < 0) 
+        {
             timer = duration;
         }
     }, 1000);
 }
 
-window.onload = function () 
+// main timer (25 minutes)
+function mainTimer() 
 {
-    var fiveMinutes = 60 * 25,
-        display = document.querySelector('#main-timer');
+    var twentyFiveMinutes = 3 * 3, //temporary values
+    display = document.querySelector('#main-timer');
+    startTimer(twentyFiveMinutes, display);
+};
+
+//executes 25 main timer
+document.getElementById("button-start").addEventListener("click", mainTimer);
+
+//break timer (5 minutes)
+function breakTimer() 
+{
+    var fiveMinutes = 60 * 3, //temporary values
+    display = document.querySelector('#break-timer');
     startTimer(fiveMinutes, display);
 };
