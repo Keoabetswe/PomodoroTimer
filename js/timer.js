@@ -25,9 +25,7 @@ function mainTimer()
     var twentyFiveMinutes = 3 * 3, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
-    
-
-};
+}
 
 //executes 25 main timer
 document.getElementById("button-start").addEventListener("click", mainTimer);
@@ -39,3 +37,26 @@ function breakTimer()
     display = document.querySelector('#break-timer');
     startTimer(fiveMinutes, display);
 };
+
+function showGreeting()
+{
+    var today = newDate();
+    var hourNow = today.getHours();
+    var greetingMessage;
+
+    if(hourNow > 18)
+    {
+        greetingMessage = "Good Evening!";
+    }
+    else if(hourNow > 12)
+    {
+        greetingMessage = "Good Afternoon!";
+    }
+    else if(hourNow > 0)
+    {
+        greetingMessage = "Good Morning!"
+    }
+    
+  var el = document.getElementById("greet");
+  el.innerHTML = "<p>haha" + greetingMessage + "</p>";
+}
