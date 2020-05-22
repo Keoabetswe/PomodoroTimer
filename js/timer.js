@@ -25,6 +25,8 @@ function mainTimer()
     var twentyFiveMinutes = 3 * 3, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
+    
+
 };
 
 //executes 25 main timer
