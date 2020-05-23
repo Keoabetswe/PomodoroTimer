@@ -25,10 +25,12 @@ function mainTimer()
     var twentyFiveMinutes = 3 * 3, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
+    showGreeting();
 }
 
 //executes 25 main timer
 document.getElementById("button-start").addEventListener("click", mainTimer);
+
 
 //break timer (5 minutes)
 function breakTimer() 
@@ -57,6 +59,6 @@ function showGreeting()
         greetingMessage = "Good Morning!"
     }
     
-  var el = document.getElementById("greet");
-  el.innerHTML = "<p>haha" + greetingMessage + "</p>";
+    document.getElementById("greet").innerHTML = greetingMessage;
+    document.getElementById("greet").innerHTML = "New text!"
 }
