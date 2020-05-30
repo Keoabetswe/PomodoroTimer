@@ -25,7 +25,6 @@ function mainTimer()
     var twentyFiveMinutes = 3 * 3, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
-    showGreeting();
 }
 
 //executes 25 main timer
@@ -54,11 +53,16 @@ function showGreeting()
     {
         greetingMessage = "Good Afternoon!";
     }
-    else if(hourNow > 0)
+    else if(hourNow > 0)6
     {
         greetingMessage = "Good Morning!"
     }
     
     document.getElementById("greet").innerHTML = greetingMessage;
-    document.getElementById("greet").innerHTML = "New text!"
+}
+
+function playAudio()
+{
+    var ping = document.getElementById("timer-alarm");
+    ping.playAudio();
 }
