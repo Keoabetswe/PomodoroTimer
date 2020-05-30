@@ -104,6 +104,13 @@ h3 header
     {
       max-width: 480px;
     }
+
+    #pomodoro-logo
+    {
+      height: 250px;
+      width: 250px;
+    }
+
 }
 
 @media only screen and (min-width: 501px) and (max-width: 767px) 
@@ -113,6 +120,7 @@ h3 header
     max-width: 480px;
     margin: 20px auto 20px auto;
   }
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) 
@@ -127,7 +135,7 @@ h3 header
  /* Larger screens act like a demo for the app */
 @media only screen and (min-width: 960px) 
 {
-  #page, #footer-links
+  #page
   {
     max-width: 480px;
     margin: 20px auto 20px auto;
