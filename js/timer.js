@@ -29,6 +29,7 @@ function mainTimer()
 
 //executes 25 main timer
 document.getElementById("button-start").addEventListener("click", mainTimer);
+document.getElementById("button-rdeset").addEventListener("click", resetTimer);
 
 
 //break timer (5 minutes)
@@ -38,6 +39,12 @@ function breakTimer()
     display = document.querySelector('#break-timer');
     startTimer(fiveMinutes, display);
 };
+
+function resetTimer()
+{
+    clearInterval(mainTimer)
+    startTimer(twentyFiveMinutes, display);
+}
 
 function showGreeting()
 {
