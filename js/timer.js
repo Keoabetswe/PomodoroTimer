@@ -20,56 +20,14 @@ function startTimer(duration, display)
 }
 
 // main timer (25 minutes)
-function mainTimer() 
+/*function mainTimer() 
 {
     var twentyFiveMinutes = 3 * 3, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
-}
-
-//executes 25 main timer
-document.getElementById("button-start").addEventListener("click", mainTimer);
-document.getElementById("button-rdeset").addEventListener("click", resetTimer);
+}*/
 
 
-//break timer (5 minutes)
-function breakTimer() 
-{
-    var fiveMinutes = 60 * 3, //temporary values
-    display = document.querySelector('#break-timer');
-    startTimer(fiveMinutes, display);
-};
 
-function resetTimer()
-{
-    clearInterval(mainTimer)
-    startTimer(twentyFiveMinutes, display);
-}
 
-function showGreeting()
-{
-    var today = newDate();
-    var hourNow = today.getHours();
-    var greetingMessage;
 
-    if(hourNow > 18)
-    {
-        greetingMessage = "Good Evening!";
-    }
-    else if(hourNow > 12)
-    {
-        greetingMessage = "Good Afternoon!";
-    }
-    else if(hourNow > 0)6
-    {
-        greetingMessage = "Good Morning!"
-    }
-    
-    document.getElementById("greet").innerHTML = greetingMessage;
-}
-
-function playAudio()
-{
-    var ping = document.getElementById("timer-alarm");
-    ping.playAudio();
-}
