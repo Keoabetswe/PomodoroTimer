@@ -14,18 +14,43 @@ function startTimer(duration, display)
 
         if (--timer < 0) 
         {
-            timer = duration;
+            clearInterval(timer = 0)
+            breakTimer();
         }
     }, 1000);
 }
 
-// main timer (25 minutes)
-/*function mainTimer() 
+
+var timerRunning = false;
+var timerMsg;
+
+function playTimer()
 {
-    var twentyFiveMinutes = 3 * 3, //temporary values
+    var twentyFiveMinutes = 3 * 1, //temporary values
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
-}*/
+
+    timerMsg = "Coding!";
+    var elPlayMsg = document.getElementById('timer-state');
+    elPlayMsg.textContent = timerMsg;
+}
+
+function breakTimer()
+{
+    timerMsg = "Take a Break!";
+    var elPBreakMsg = document.getElementById('timer-state');
+    elPBreakMsg.textContent = timerMsg;
+}
+
+
+function pauseTimer()
+{
+    timerMsg = "Paused!";
+    var elPauseMsg = document.getElementById('timer-state');
+    elPauseMsg.textContent = timerMsg;
+}
+
+document.getElementById("button-start").addEventListener("click", startTimer);
 
 
 
