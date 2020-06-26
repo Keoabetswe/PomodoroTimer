@@ -15,7 +15,7 @@ function startTimer(duration, display)
         if (--timer < 0) 
         {
             clearInterval(timer = 0)
-            breakTimer();
+            
         }
     }, 1000);
 }
@@ -50,7 +50,7 @@ function pauseTimer()
     elPauseMsg.textContent = timerMsg;
 }
 
-document.getElementById("button-start").addEventListener("click", startTimer);
+document.getElementById("button-start").addEventListener("click", playTimer);
 
 
 
