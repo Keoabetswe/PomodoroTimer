@@ -15,7 +15,7 @@ function startTimer(duration, display)
         if (--timer < 0) 
         {
             clearInterval(timer = 0)
-            
+            breakTimer();
         }
     }, 1000);
 }
@@ -26,7 +26,8 @@ var timerMsg;
 
 function playTimer()
 {
-    var twentyFiveMinutes = 3 * 1, //temporary values
+    clearInterval()
+    var twentyFiveMinutes = 3,
     display = document.querySelector('#main-timer');
     startTimer(twentyFiveMinutes, display);
 
@@ -51,6 +52,7 @@ function pauseTimer()
 }
 
 document.getElementById("button-start").addEventListener("click", playTimer);
+document.getElementById("button-pause").addEventListener("click", pauseTimer);
 
 
 
